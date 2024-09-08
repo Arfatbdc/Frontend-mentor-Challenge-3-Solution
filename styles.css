@@ -1,0 +1,96 @@
+/* Reset some default styles */
+:root{
+  --color-primary: hsl(47, 88%, 63%);
+  --color-secondary: #f9f9f9;
+  --color-text: #000; /* Added missing value */
+}
+*{
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: hsla(0, 0%, 6%, 0.897);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+@media screen and (min-width: 375px) {
+    body {
+        font-size: 0.8rem;
+    }
+}
+.wraper{
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    margin: 2%;
+    padding: 3%;
+    width: 95%;    
+}
+@media screen and (min-width: 375px) {
+   .wraper {
+    height: 98vh;
+   } 
+}
+
+/* Card styles */
+.card {
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 4px navy;
+    overflow: hidden;
+    width: 300px;
+    height: auto;
+}
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+.card-header{
+    padding: 0.5em;
+}
+.card-description {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+.card-title-above {
+    display: inline;
+    font-size: 1.2em;
+    margin-bottom: 0.1em;
+    margin-top: 0px !important;
+    background-color: var(--color-primary);
+    padding: 0.4em;
+    border-radius: 10px;
+    text-align: center;
+}
+.footer-text{
+    padding-left: 10px !important;
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold !important;
+}
